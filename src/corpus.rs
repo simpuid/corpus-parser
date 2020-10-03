@@ -132,7 +132,7 @@ impl Corpus {
         if !mega_token.token.is_empty() {
             let mut iter = mega_token.token.into_iter().peekable();
             while let Some(token) = iter.next() {
-                write!(self.file, "{}{}", self.format_token(token), if iter.peek().is_some() { '_' } else { ' ' })?;
+                write!(self.file, "{}{}", self.format_token(token), if iter.peek().is_some() { ' ' } else { '_' })?;
             }
             write!(self.file, "{}\n", tag)?;
         }
