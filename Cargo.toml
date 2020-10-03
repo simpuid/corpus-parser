@@ -1,0 +1,9 @@
+[package]
+name = "corpus-parser"
+version = "0.1.0"
+authors = ["Simpu <id.simpu@gmail.com>"]
+edition = "2018"
+
+
+[dependencies]
+xml-rs = "0.8.3"
